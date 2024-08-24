@@ -1,8 +1,11 @@
-let fecha = new Date()
+let fecha = new Date(`2012-02-20-3:12`)
 
-console.log(fecha.getDay)
+let mesesAño = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "octubre", "Noviembre", "Diciembre"]
 
+let año = fecha.getFullYear()
+let mes1 = mesesAño[fecha.getMonth()]
+let dia1 = fecha.getDate()
+let hora = fecha.getHours()
+let min = fecha.getMinutes()
 
-let diaSemana = [`Sun`,`Mon`,`Tue`,`Wen`,`Thu`,`Fri`,`Sat`]
-
-console.log(`El dia de hoy es: ${fecha.getDate(diaSemana)}`)
+console.log(` ${mes1} ${dia1}, ${año}, ${hora}:${min}AM `)
